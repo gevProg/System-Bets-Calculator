@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.calculator-input {
+  @apply bg-[#2a2a2a] border-[#3a3a3a] text-white px-3 py-2 rounded-sm focus:outline-none focus:border-[#4a4a4a];
+}
+
+.status-button {
+  @apply px-2 py-1 text-xs font-medium rounded-sm transition-colors;
+}
+
+.status-button.active {
+  @apply bg-[#00b073] text-white;
+}
+
+.status-button.inactive {
+  @apply bg-[#2a2a2a] text-gray-300 hover:bg-[#3a3a3a];
+}
